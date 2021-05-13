@@ -23,7 +23,7 @@ jobs:
         run: python -m cibuildwheel --output-dir wheelhouse
         # to supply options, put them in 'env', like:
         env:
-          CIBW_BUILD: "{cp,pp}3*-*"
+          CIBW_BUILD: "cp3*-*"
           CIBW_SKIP: "cp35-*"
 
       - uses: actions/upload-artifact@v2
